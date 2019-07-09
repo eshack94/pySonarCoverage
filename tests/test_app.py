@@ -1,7 +1,10 @@
 import unittest
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../app')))
+
 from app import factorial
 from app import fibonacci
-
 
 class TestFibonacci(unittest.TestCase):
     def test_fibonacci_1(self):
